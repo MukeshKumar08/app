@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="5dp"
+    tools:context=".Vendor_registration.Vendor_Activity.VendorRegistration">
+
+
+    <LinearLayout
+        android:id="@+id/reg_main_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ScrollView
+            android:id="@+id/reg_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_vendor_reg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="New Registration"
+                    android:textAllCaps="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <!--                <Spinner-->
+                <!--                    android:id="@+id/reg_spinner"-->
+                <!--                    android:layout_width="340dp"-->
+                <!--                    android:layout_height="40dp"-->
+                <!--                    android:layout_marginTop="15dp"-->
+                <!--                    style="@style/Widget.AppCompat.Spinner.DropDown"-->
+                <!--                    android:onClick="spinner"-->
+                <!--                    />-->
+
+
+                <EditText
+                    android:id="@+id/vendor_name"
+                    android:layout_width="340dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:gravity="center"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/vendor_city"
+                    android:layout_width="340dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_style"
+                    android:gravity="center"
+                    android:hint="City"
+                    android:inputType="text"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/vendor_state"
+                    android:layout_width="340dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="State"
+                    android:inputType="text"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/vendor_country"
+                    android:layout_width="340dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Country"
+                    android:inputType="text"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/vendor_pinCode"
+                    android:layout_width="340dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Pin code"
+                    android:inputType="number"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/vendor_address"
+                    android:layout_width="340dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Address"
+                    android:inputType="text"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/vendor_email"
+                    android:layout_width="340dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/vendor_password"
+                    android:layout_width="340dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Password"
+                    android:inputType="textVisiblePassword"
+                    android:visibility="visible" />
+
+
+                <EditText
+                    android:id="@+id/vendor_business"
+                    android:layout_width="340dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ems="10"
+                    android:gravity="center|center_vertical"
+                    android:hint="Add Your Main Business"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:visibility="visible">
+
+                </EditText>
+
+
+                <EditText
+                    android:id="@+id/vendor_business_one"
+                    android:layout_width="340dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ems="10"
+                    android:hint="Add Your Business 1"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:visibility="visible">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/vendor_business_two"
+                    android:layout_width="340dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ems="10"
+                    android:gravity="center|center_vertical"
+                    android:hint="Add Your Business 2"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:visibility="visible">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/vendor_business_three"
+                    android:layout_width="340dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ems="10"
+                    android:hint="Add Your Business 3"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:visibility="visible">
+
+                </EditText>
+
+                <TextView
+                    android:id="@+id/get_location_lat"
+                    android:layout_width="340dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Click Button for Latitude"
+                    android:visibility="visible">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/get_location_long"
+                    android:layout_width="340dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Click Button for Longitude"
+                    android:visibility="visible">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/button_location"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_style"
+                    android:onClick="GetLocation"
+                    android:text="Get Location"
+                    android:textAllCaps="false"
+                    android:textColor="#000000">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/vendor_submit"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_style"
+                    android:onClick="SaveContinue"
+                    android:text="Save and Continue"
+                    android:textAllCaps="false"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4fb053</color>
+    <color name="colorPrimaryDark">#4fb053</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="transparent_white">#ccc</color>
+    <color name="Persian_Indigo"> #1b3e7d </color>
+    <color name="gray">#808080</color>
+    <color name="purple">#9932CC</color>
+    <color name="blue_violet">#8A2BE2 </color>
+    <color name="light_green">#4fb053</color>
+    <color name="green">#4fb053</color>
+    <color name="transparent">#ffffffff</color>
+</resources>
+

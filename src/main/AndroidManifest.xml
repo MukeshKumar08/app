@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gg.gg">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true">
+
+    </supports-screens>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/gicon_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/gicon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".search.Dashboard_Food.RecyclerFood"></activity>
+        <activity android:name=".vendor_product.Item_registration" />
+        <activity android:name=".vendor_product.Food_Product" />
+        <activity
+            android:name=".vendor_product.Products"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Vendor_registration.Vendor_Activity.VendorRegistration"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Main_Activity.Splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.View"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CommonActivity.Vendor_gpsEnable" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".CommonActivity.MapsActivity"
+            android:label="@string/title_activity_maps">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gg.gg.search.dashboard_cust" />
+        </activity>
+        <activity
+            android:name=".search.Dashboard_Milk.recycler_view_milk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".search.dashboard_cust"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Otp.OTP_Activity.otp_page"
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".User_registration.User_Activity.user_registration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login_pages.Login_Activity.sign_in"
+            android:enabled="true"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main_Activity.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name=".CommonActivity.smsBroadcastReceiver"
+            android:exported="true">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

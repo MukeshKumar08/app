@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".vendor_product.Products">
+
+    <LinearLayout
+        android:id="@+id/product_LL_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/product_card_food"
+                android:layout_width="165dp"
+                android:layout_height="250dp"
+                android:layout_margin="10dp"
+                android:onClick="card_food">
+
+                <LinearLayout
+                    android:id="@+id/product_LL_Two_food"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/product_ib_food"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:layout_marginBottom="25dp"
+                        android:background="#FFF"
+                        android:onClick="ImageFood"
+                        android:src="@drawable/food_large" />
+
+                    <TextView
+                        android:id="@+id/product_tv_food"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Food"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/product_card_milk"
+                android:layout_width="165dp"
+                android:layout_height="250dp"
+                android:layout_margin="10dp"
+                android:onClick="card_milk">
+
+                <LinearLayout
+                    android:id="@+id/product_LL_Two_milk"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/product_ib_milk"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:layout_marginBottom="25dp"
+                        android:background="#FFF"
+                        android:onClick="ImageMilk"
+                        android:src="@drawable/milk_bottle_la" />
+
+                    <TextView
+                        android:id="@+id/product_tv_milk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Milk"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/product_card_vegetables"
+                android:layout_width="165dp"
+                android:layout_height="250dp"
+                android:layout_margin="10dp"
+                android:onClick="card_vegetables">
+
+                <LinearLayout
+                    android:id="@+id/product_LL_Two_vegetables"
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageButton
+                        android:id="@+id/product_ib_vegetables"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:layout_marginBottom="25dp"
+                        android:background="#FFF"
+                        android:onClick="ImageVegetables"
+                        android:src="@drawable/carrot_la" />
+
+                    <TextView
+                        android:id="@+id/product_tv_vegetables"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Vegetables"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/product_card_iron"
+                android:layout_width="165dp"
+                android:layout_height="250dp"
+                android:layout_margin="10dp"
+                android:onClick="card_iron">
+
+                <LinearLayout
+                    android:id="@+id/product_LL_Two_iron"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/product_ib_iron"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:layout_marginBottom="25dp"
+                        android:background="#FFF"
+                        android:onClick="ImageIron"
+                        android:src="@drawable/iron_la" />
+
+                    <TextView
+                        android:id="@+id/product_tv_iron"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Iron"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/product_card_tire"
+                android:layout_width="165dp"
+                android:layout_height="250dp"
+                android:layout_margin="10dp"
+                android:onClick="card_tire">
+
+                <LinearLayout
+                    android:id="@+id/product_LL_Two_tire"
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageButton
+                        android:id="@+id/product_ib_tire"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:layout_marginBottom="25dp"
+                        android:background="#FFF"
+                        android:onClick="ImageTire"
+                        android:src="@drawable/car_wheel_la" />
+
+                    <TextView
+                        android:id="@+id/product_tv_tire"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Tire"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/product_card_other"
+                android:layout_width="165dp"
+                android:layout_height="250dp"
+                android:layout_margin="10dp"
+                android:onClick="card_other">
+
+                <LinearLayout
+                    android:id="@+id/product_LL_Two_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/product_ib_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:layout_marginBottom="25dp"
+                        android:background="#FFF"
+                        android:onClick="ImageOther"
+                        android:src="@drawable/other_business" />
+
+                    <TextView
+                        android:id="@+id/product_tv_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Other Business"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

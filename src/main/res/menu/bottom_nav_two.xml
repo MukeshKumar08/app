@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--        <item-->
+<!--            android:id="@+id/nav_Vegetables"-->
+<!--            android:icon="@drawable/nav_harvest"-->
+<!--            android:title="Vegetables"-->
+<!--            android:visible="true"-->
+<!--            app:showAsAction="always|withText">-->
+
+<!--        </item>-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_Iron"-->
+<!--            android:icon="@drawable/nav_ironing"-->
+<!--            android:title="Ironing"-->
+<!--            android:visible="true"-->
+<!--            app:showAsAction="always|withText">-->
+
+<!--        </item>-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_Tires"-->
+<!--            android:icon="@drawable/nav_car_wheel"-->
+<!--            android:title="Tire"-->
+<!--            android:visible="true"-->
+<!--            app:showAsAction="always|withText">-->
+
+<!--        </item>-->
+
+</menu>

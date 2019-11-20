@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/filter_liner_veg"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:weightSum="2">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/filter_et_veg"-->
+<!--            android:layout_width="260dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:hint="search with city"-->
+<!--            android:imeOptions="actionSearch"-->
+<!--            android:inputType="text"-->
+<!--            android:background="@drawable/edit_text_style"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColorHint="#000" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/filter_search_veg"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Search"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:background="@drawable/button_style"-->
+<!--            />-->
+
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_veg"
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/recyclerView_vegetable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/getLoc_veg"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_style"
+        android:text="Get Location">
+    </Button>
+
+</LinearLayout>

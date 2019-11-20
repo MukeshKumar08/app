@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">GG</string>
+    <string name="sigin_in">Dont have Account in GG App </string>
+    <string name="reset_password_success">We have sent a link to your email to reset your password. Once you have updated your information you can try again.</string>
+    <string name="reset_password">Enter the email associated with your account and we will send you a link to rest your password</string>
+    <string name="otp_secure">Wait for OTP for entered phone number</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="reg_page_note">welcome to GG app to explore more. please Register your details </string>
+    <string name="reg_page_vendor">Get Registered with GG app to get new Customers</string>
+    <string name="title_activity_sample">sample</string>
+    <string name="title_activity_dashboard__items">Dashboard_Items</string>
+    <string name="Enable_title">Congrats you have registered with GG app.</string>
+    <string name="title_activity_products">Products</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="home_title_one">Welcome to GG app</string>
+    <string name="home_title_two">Sit back and relax now you can get the customers through online with for GG app. Register your Business</string>
+    <string name="items_title">You can add number of items with the price</string>
+    <string name="Search">Search with City></string>
+</resources>

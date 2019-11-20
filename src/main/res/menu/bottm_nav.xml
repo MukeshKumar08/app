@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/nav_Food"
+        android:icon="@drawable/ic_restaurant"
+        android:title="Food"
+        android:enabled="true"
+        app:showAsAction="ifRoom">
+
+    </item>
+
+    <item
+        android:id="@+id/nav_Milk"
+        android:icon="@drawable/nav_milk_bottle"
+        android:title="Milk"
+        android:enabled="true"
+        app:showAsAction="ifRoom">
+
+
+    </item>
+
+    <item
+        android:id="@+id/nav_Vegetables"
+        android:icon="@drawable/nav_harvest"
+        android:title="Vegetables"
+        android:enabled="true"
+        app:showAsAction="ifRoom">
+
+
+    </item>
+
+    <item
+        android:id="@+id/nav_Tires"
+        android:icon="@drawable/car_wheel_la"
+        android:title="Tires"
+        android:enabled="true"
+        app:showAsAction="ifRoom">
+
+
+    </item>
+
+<!--    <item-->
+<!--        android:id="@+id/nav_Tires"-->
+<!--        android:icon="@drawable/nav_car_wheel"-->
+<!--        android:title="Tire"-->
+<!--        android:visible="true"-->
+<!--        app:showAsAction="always|withText">-->
+
+<!--    </item>-->
+
+</menu>

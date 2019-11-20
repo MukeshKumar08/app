@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--           >-->
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/et_search_box"-->
+            <!--                android:layout_width="290dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:drawableLeft="@drawable/ic_search_black_24dp"-->
+            <!--                android:hint="Search with city,state,country"-->
+            <!--                android:padding="10dp"-->
+            <!--                android:textAlignment="center">-->
+
+            <!--            </EditText>-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/filter_search"-->
+<!--                android:layout_width="290dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Search with city"-->
+<!--                android:imeOptions="actionSearch"-->
+<!--                android:imeActionLabel="@string/Search"-->
+<!--                android:inputType="text">-->
+
+<!--            </EditText>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btn_search_box"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:background="@drawable/button_style"-->
+<!--                android:onClick="SearchBox"-->
+<!--                android:text="Search"-->
+<!--                android:textColor="#000">-->
+
+<!--            </Button>-->
+<!--        </LinearLayout>-->
+
+        <!--        <androidx.appcompat.widget.SearchView-->
+        <!--            android:id="@+id/search_list"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:queryHint="Search with city,state,country">-->
+
+        <!--        </androidx.appcompat.widget.SearchView>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RecyclerView_milk"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_style"
+                android:onClick="Get_Location"
+                android:text="Get Location">
+
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
